@@ -3,8 +3,11 @@ package com.emerson.cognizant.infrastructure.repository;
 import com.emerson.cognizant.domain.race.entities.RaceLapResultEntryLog;
 import com.emerson.cognizant.domain.race.interfaces.RaceLogsRepository;
 import com.opencsv.CSVReader;
+import org.apache.commons.io.FileUtils;
 import org.springframework.stereotype.Component;
 
+
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -13,6 +16,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Component
 public class RaceLogCsvReader implements RaceLogsRepository {
 
@@ -20,11 +24,12 @@ public class RaceLogCsvReader implements RaceLogsRepository {
     public List<RaceLapResultEntryLog> getLog() throws IOException, URISyntaxException {
 
         var raceResultList = new ArrayList<RaceLapResultEntryLog>();
-        var urlPath = getClass().getClassLoader().getResource("logs.csv");
-        var file = Paths.get(urlPath.toURI()).toFile();
-        String absolutePath = file.getAbsolutePath();
+        var inputStream = getClass().getClassLoader().getResourceAsStream("logs.csv");
+        var tempFile = File.createTempFile("logs", ".csv");
+        FileUtils.copyInputStreamToFile(inputStream, tempFile);
 
-        var fileReader = new FileReader(absolutePath);
+
+        var fileReader = new FileReader(tempFile);
         var csvReader = new CSVReader(fileReader, ';');
         String[] nextRecord;
 
