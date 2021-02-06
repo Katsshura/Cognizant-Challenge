@@ -1,7 +1,7 @@
 package com.emerson.cognizant.api.controllers;
 
 import com.emerson.cognizant.api.viewModels.MatrixInputViewModel;
-import com.emerson.cognizant.domain.interfaces.MatrixComparer;
+import com.emerson.cognizant.domain.matrix.interfaces.MatrixComparer;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

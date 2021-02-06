@@ -1,7 +1,7 @@
 package com.emerson.cognizant.domain.services;
 
-import com.emerson.cognizant.domain.interfaces.MatrixComparer;
-import com.emerson.cognizant.domain.interfaces.MatrixRepository;
+import com.emerson.cognizant.domain.matrix.interfaces.MatrixComparer;
+import com.emerson.cognizant.domain.matrix.interfaces.MatrixRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;

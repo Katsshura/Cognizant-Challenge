@@ -1,4 +1,4 @@
-package com.emerson.cognizant.domain.entities;
+package com.emerson.cognizant.domain.matrix.entities;
 
 import lombok.Getter;
 

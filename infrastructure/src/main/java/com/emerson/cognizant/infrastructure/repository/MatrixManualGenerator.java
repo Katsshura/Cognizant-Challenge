@@ -1,8 +1,8 @@
 package com.emerson.cognizant.infrastructure.repository;
 
-import com.emerson.cognizant.domain.entities.Matrix;
-import com.emerson.cognizant.domain.entities.MatrixLine;
-import com.emerson.cognizant.domain.interfaces.MatrixRepository;
+import com.emerson.cognizant.domain.matrix.entities.Matrix;
+import com.emerson.cognizant.domain.matrix.entities.MatrixLine;
+import com.emerson.cognizant.domain.matrix.interfaces.MatrixRepository;
 import com.emerson.cognizant.infrastructure.config.MatrixGeneratorConfig;
 import org.springframework.stereotype.Component;
 

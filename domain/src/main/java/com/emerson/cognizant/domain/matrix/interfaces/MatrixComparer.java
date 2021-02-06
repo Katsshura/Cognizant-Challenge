@@ -1,4 +1,4 @@
-package com.emerson.cognizant.domain.interfaces;
+package com.emerson.cognizant.domain.matrix.interfaces;
 
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
