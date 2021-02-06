@@ -1,6 +1,6 @@
 package com.emerson.cognizant.infrastructure;
 
-import com.emerson.cognizant.domain.interfaces.MatrixRepository;
+import com.emerson.cognizant.domain.matrix.interfaces.MatrixRepository;
 import com.emerson.cognizant.infrastructure.config.MatrixGeneratorConfig;
 import com.emerson.cognizant.infrastructure.repository.MatrixManualGenerator;
 import org.junit.jupiter.api.DisplayName;

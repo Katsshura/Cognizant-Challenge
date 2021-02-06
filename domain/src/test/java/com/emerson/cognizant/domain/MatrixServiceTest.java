@@ -1,9 +1,9 @@
 package com.emerson.cognizant.domain;
 
-import com.emerson.cognizant.domain.entities.Matrix;
-import com.emerson.cognizant.domain.entities.MatrixLine;
-import com.emerson.cognizant.domain.interfaces.MatrixComparer;
-import com.emerson.cognizant.domain.interfaces.MatrixRepository;
+import com.emerson.cognizant.domain.matrix.entities.Matrix;
+import com.emerson.cognizant.domain.matrix.entities.MatrixLine;
+import com.emerson.cognizant.domain.matrix.interfaces.MatrixComparer;
+import com.emerson.cognizant.domain.matrix.interfaces.MatrixRepository;
 import com.emerson.cognizant.domain.services.MatrixService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

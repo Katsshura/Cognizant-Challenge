@@ -1,6 +1,6 @@
 package com.emerson.cognizant.domain;
 
-import com.emerson.cognizant.domain.entities.MatrixLine;
+import com.emerson.cognizant.domain.matrix.entities.MatrixLine;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import java.util.Map;
