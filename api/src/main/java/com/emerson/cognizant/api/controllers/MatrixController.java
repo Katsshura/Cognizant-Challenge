@@ -16,7 +16,7 @@ import java.util.concurrent.ExecutionException;
 
 @ApiResponses(value = {
         @ApiResponse(code = 200, message = "Request processed with success"),
-        @ApiResponse(code = 404, message = "You must provide a valid body!"),
+        @ApiResponse(code = 400, message = "You must provide a valid body!"),
         @ApiResponse(code = 500, message = "Something went wrong in ours servers"),
 })
 @RestController
